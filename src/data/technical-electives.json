@@ -1,0 +1,199 @@
+{
+  "electives": [
+    {
+      "id": "CS4314",
+      "code": "CS 4314",
+      "title": "Intelligent Systems Analysis",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2414-2419"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3341"], "operator": "or" },
+        { "kind": "prereq", "courses": ["MATH2418"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4315",
+      "code": "CS 4315",
+      "title": "Intelligent Systems Design",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4314"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4332",
+      "code": "CS 4332",
+      "title": "Computer Network Security",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4334",
+      "code": "CS 4334",
+      "title": "Numerical Analysis",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS1337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["MATH2418"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4336",
+      "code": "CS 4336",
+      "title": "Advanced C++ Programming",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4339",
+      "code": "CS 4339",
+      "title": "Web Application Development",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4347"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4352",
+      "code": "CS 4352",
+      "title": "Introduction to Human-Computer Interaction",
+      "prerequisites": []
+    },
+    {
+      "id": "CS4361",
+      "code": "CS 4361",
+      "title": "Computer Graphics",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2418"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4365",
+      "code": "CS 4365",
+      "title": "Digital Systems Design",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4375",
+      "code": "CS 4375",
+      "title": "Software Testing, Verification, and Validation",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3341"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4376",
+      "code": "CS 4376",
+      "title": "Compiler Design",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3354"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4386",
+      "code": "CS 4386",
+      "title": "Game Technology",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4389",
+      "code": "CS 4389",
+      "title": "Knowledge Representation",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4347"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4390",
+      "code": "CS 4390",
+      "title": "Computer Networks",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4391",
+      "code": "CS 4391",
+      "title": "Introduction to Machine Learning",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4392",
+      "code": "CS 4392",
+      "title": "Computer Animation",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2418"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4393",
+      "code": "CS 4393",
+      "title": "Advanced Computer Networks",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4348"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS4390"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4394",
+      "code": "CS 4394",
+      "title": "Software Security",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4348"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4395",
+      "code": "CS 4395",
+      "title": "Human Language Technology",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3341"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4396",
+      "code": "CS 4396",
+      "title": "Networking Laboratory",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4390"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4397",
+      "code": "CS 4397",
+      "title": "Distributed Systems",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4348"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4398",
+      "code": "CS 4398",
+      "title": "Network Security",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS4348"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS4390"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4459",
+      "code": "CS 4459",
+      "title": "Introduction to Computational Geometry",
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2340"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3377"], "operator": "or" }
+      ]
+    }
+  ]
+}

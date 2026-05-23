@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "title": "BS Computer Science Course Map",
+    "subtitle": "2025–2026",
+    "school": "Erik Jonsson School of Engineering and Computer Science"
+  },
+  "gradeRequirements": {
+    "default": "C or better required unless noted by *",
+    "asterisk": "D- or better required for courses marked *"
+  },
+  "coreCurriculum": [
+    { "code": "RHET 1302", "label": "Rhetoric" },
+    { "code": "GOVT 2305", "label": "American Government" },
+    { "code": "GOVT 2306", "label": "Texas Government" },
+    { "code": "060", "label": "American History" },
+    { "code": "040", "label": "Language, Philosophy and Culture" },
+    { "code": "050", "label": "Creative Arts" },
+    { "code": "080", "label": "Social and Behavioral Sciences" }
+  ],
+  "courses": [
+    {
+      "id": "CS1436",
+      "code": "CS 1436",
+      "title": "Programming Fundamentals",
+      "semester": 1,
+      "row": 1,
+      "category": "major-prep",
+      "criticalPath": true,
+      "prerequisites": []
+    },
+    {
+      "id": "MATH2413-2417",
+      "code": "MATH 2413 or 2417",
+      "title": "Calculus I",
+      "semester": 1,
+      "row": 2,
+      "category": "major-prep",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "ALEKS 80% or MATH 2312" }
+      ]
+    },
+    {
+      "id": "ECS1100",
+      "code": "ECS 1100",
+      "title": "Intro to ENGR & CS",
+      "asterisk": true,
+      "semester": 1,
+      "row": 3,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "First Year" }
+      ]
+    },
+    {
+      "id": "CS1200",
+      "code": "CS 1200",
+      "title": "Introduction to CS and SE",
+      "semester": 1,
+      "row": 4,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "First Year" }
+      ]
+    },
+    {
+      "id": "RHET1302",
+      "code": "RHET 1302",
+      "title": "Rhetoric",
+      "asterisk": true,
+      "semester": 1,
+      "row": 5,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS1337",
+      "code": "CS 1337",
+      "title": "Computer Science I",
+      "semester": 2,
+      "row": 1,
+      "category": "major-prep",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS1436"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "MATH2414-2419",
+      "code": "MATH 2414 or 2419",
+      "title": "Calculus II",
+      "semester": 2,
+      "row": 2,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2413-2417"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "PHYS2325",
+      "code": "PHYS 2325/2125",
+      "title": "Mechanics and Lab",
+      "semester": 2,
+      "row": 3,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2413-2417"], "operator": "or" },
+        { "kind": "coreq", "courses": ["MATH2414-2419"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS2305",
+      "code": "CS 2305",
+      "title": "Discrete Mathematics for Computing",
+      "semester": 2,
+      "row": 4,
+      "category": "major-prep",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2413-2417"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CORE-S2",
+      "code": "Core",
+      "title": "Core Curriculum",
+      "asterisk": true,
+      "semester": 2,
+      "row": 5,
+      "category": "core",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS2336-2337",
+      "code": "CS 2336 (Java) or CS 2337 (C++)",
+      "title": "Computer Science II",
+      "semester": 3,
+      "row": 1,
+      "category": "major-prep",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS1337"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS2340",
+      "code": "CS 2340",
+      "title": "Computer Architecture",
+      "semester": 3,
+      "row": 2,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS1337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "PHYS2326",
+      "code": "PHYS 2326/2126",
+      "title": "Electricity and Magnetism and Lab",
+      "semester": 3,
+      "row": 3,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["PHYS2325"], "operator": "or" },
+        { "kind": "prereq", "courses": ["MATH2414-2419"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "MATH2418",
+      "code": "MATH 2418",
+      "title": "Linear Algebra",
+      "semester": 3,
+      "row": 4,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2413-2417"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CORE-S3",
+      "code": "Core",
+      "title": "Core Curriculum",
+      "asterisk": true,
+      "semester": 3,
+      "row": 5,
+      "category": "core",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "ECS2390",
+      "code": "ECS 2390",
+      "title": "Professional and Technical Communication",
+      "semester": 4,
+      "row": 1,
+      "category": "major-prep",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["RHET1302"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS3345",
+      "code": "CS 3345",
+      "title": "Data Structures & Algorithms",
+      "semester": 4,
+      "row": 2,
+      "category": "required",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS3341",
+      "code": "CS 3341",
+      "title": "Probability & Statistics in CS & SE",
+      "semester": 4,
+      "row": 3,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["MATH2414-2419"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" },
+        { "kind": "prereq", "courses": ["MATH2418"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS3377",
+      "code": "CS 3377",
+      "title": "Systems Programming in UNIX and Other Environments",
+      "semester": 4,
+      "row": 4,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CORE-S4",
+      "code": "Core",
+      "title": "Core Curriculum",
+      "asterisk": true,
+      "semester": 4,
+      "row": 5,
+      "category": "core",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS4337",
+      "code": "CS 4337",
+      "title": "Programming Language Paradigms",
+      "semester": 5,
+      "row": 1,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2340"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4341",
+      "code": "CS 4341/4141",
+      "title": "Digital Logic and Computer Design and Lab",
+      "semester": 5,
+      "row": 2,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["PHYS2326"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2340"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS3354",
+      "code": "CS 3354",
+      "title": "Software Engineering",
+      "semester": 5,
+      "row": 3,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2336-2337"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" },
+        { "kind": "prereq", "courses": ["ECS2390"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "GOVT2305",
+      "code": "GOVT 2305",
+      "title": "American Government",
+      "asterisk": true,
+      "semester": 5,
+      "row": 4,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CORE-S5-B",
+      "code": "Core",
+      "title": "Core Curriculum",
+      "asterisk": true,
+      "semester": 5,
+      "row": 5,
+      "category": "core",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS4349",
+      "code": "CS 4349",
+      "title": "Advanced Algorithm Design and Analysis",
+      "semester": 6,
+      "row": 1,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4348",
+      "code": "CS 4348",
+      "title": "Operating Systems Concepts",
+      "semester": 6,
+      "row": 2,
+      "category": "required",
+      "criticalPath": true,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2340"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3377"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS3162",
+      "code": "CS 3162",
+      "title": "Professional Responsibility in Computer Science and Software Engineering",
+      "semester": 6,
+      "row": 3,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["ECS2390"], "operator": "or" },
+        { "kind": "prereq", "courses": ["GOVT2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "GOVT2306",
+      "code": "GOVT 2306",
+      "title": "Texas Government",
+      "asterisk": true,
+      "semester": 6,
+      "row": 4,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["GOVT2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "TECH-ELECTIVE-1",
+      "code": "Technical Elective",
+      "title": "Technical Elective",
+      "semester": 6,
+      "row": 5,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "See Catalog" }
+      ]
+    },
+    {
+      "id": "FREE-ELECTIVE-1",
+      "code": "Free Elective",
+      "title": "Free Elective",
+      "asterisk": true,
+      "semester": 6,
+      "row": 6,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS4384",
+      "code": "CS 4384",
+      "title": "Automata Theory",
+      "semester": 7,
+      "row": 1,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS2305"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "CS4347",
+      "code": "CS 4347",
+      "title": "Database Systems",
+      "semester": 7,
+      "row": 2,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" }
+      ]
+    },
+    {
+      "id": "TECH-ELECTIVE-2",
+      "code": "Technical Elective",
+      "title": "Technical Elective",
+      "semester": 7,
+      "row": 3,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "See Catalog" }
+      ]
+    },
+    {
+      "id": "TECH-ELECTIVE-3",
+      "code": "Technical Elective",
+      "title": "Technical Elective",
+      "semester": 7,
+      "row": 4,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "See Catalog" }
+      ]
+    },
+    {
+      "id": "FREE-ELECTIVE-2",
+      "code": "Free Elective",
+      "title": "Free Elective",
+      "asterisk": true,
+      "semester": 7,
+      "row": 5,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "FREE-ELECTIVE-3",
+      "code": "Free Elective",
+      "title": "Free Elective",
+      "asterisk": true,
+      "semester": 7,
+      "row": 6,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CS4485",
+      "code": "CS 4485",
+      "title": "Computer Science Project",
+      "semester": 8,
+      "row": 1,
+      "category": "required",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "courses": ["CS3345"], "operator": "or" },
+        { "kind": "prereq", "courses": ["CS3354"], "operator": "or" },
+        { "kind": "prereq", "external": true, "label": "3 CS 4XXX courses" }
+      ]
+    },
+    {
+      "id": "TECH-ELECTIVE-4",
+      "code": "Technical Elective",
+      "title": "Technical Elective",
+      "semester": 8,
+      "row": 2,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": [
+        { "kind": "prereq", "external": true, "label": "See Catalog" }
+      ]
+    },
+    {
+      "id": "FREE-ELECTIVE-4",
+      "code": "Free Elective",
+      "title": "Free Elective",
+      "asterisk": true,
+      "semester": 8,
+      "row": 3,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "FREE-ELECTIVE-1SCH",
+      "code": "Free Elective (1 SCH)",
+      "title": "Free Elective — 1 credit hour",
+      "asterisk": true,
+      "semester": 8,
+      "row": 4,
+      "category": "elective",
+      "criticalPath": false,
+      "prerequisites": []
+    },
+    {
+      "id": "CORE-S8",
+      "code": "Core",
+      "title": "Core Curriculum",
+      "asterisk": true,
+      "semester": 8,
+      "row": 5,
+      "category": "core",
+      "criticalPath": false,
+      "prerequisites": []
+    }
+  ]
+}

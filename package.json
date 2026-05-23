@@ -1,0 +1,22 @@
+{
+  "name": "cs-degree-map",
+  "version": "1.0.0",
+  "description": "An interactive degree map for computer science students.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "degree map",
+    "computer science",
+    "interactive"
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS Computer Science Course Map 2025–2026</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-text">
+      <p class="school-name">Erik Jonsson School of Engineering and Computer Science</p>
+      <h1>BS Computer Science Course Map</h1>
+      <p class="map-year">2025–2026</p>
+    </div>
+    <div class="header-actions">
+      <button type="button" id="btn-reset" class="btn-secondary">Reset progress</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="map-section" aria-label="Degree course map">
+      <div id="degree-map" class="degree-map"></div>
+    </section>
+
+    <aside class="sidebar" aria-label="Course details">
+      <div id="course-panel" class="course-panel">
+        <p class="panel-hint">Orange <strong>*</strong> = prerequisites met (ready for next semester). Click a course for prereq chain (yellow) and unlocks (red). Checkbox = completed (green).</p>
+      </div>
+
+      <section class="tech-electives-panel" aria-label="Technical electives">
+        <h2>Technical Electives</h2>
+        <p id="tech-slots-hint" class="tech-slots-hint"></p>
+        <ul id="tech-electives-list" class="tech-electives-list"></ul>
+      </section>
+
+      <section class="legend" aria-label="Legend">
+        <h2>Legend</h2>
+        <ul>
+          <li><span class="swatch swatch-prep"></span> Major preparatory course</li>
+          <li><span class="swatch swatch-required"></span> Other required course or elective</li>
+          <li><span class="swatch swatch-critical"></span> Critical path (thick border)</li>
+          <li><span class="swatch swatch-unlocks"></span> Unlocks when selected (red)</li>
+          <li><span class="swatch swatch-complete"></span> Completed (green)</li>
+          <li><span class="eligible-demo">*</span> Prerequisites met (orange, top-right)</li>
+          <li><span class="grade-asterisk-demo">*</span> In course code: D- or better (otherwise C or better)</li>
+          <li><span class="chip-demo chip-prereq"></span> Prerequisite</li>
+          <li><span class="chip-demo chip-coreq"></span> Pre- or corequisite</li>
+          <li><span class="swatch swatch-core"></span> Core curriculum</li>
+        </ul>
+      </section>
+
+      <section class="core-table" aria-label="Core curriculum choices">
+        <h2>Core Curriculum Choices</h2>
+        <table>
+          <thead>
+            <tr><th>Requirement</th><th>Examples</th></tr>
+          </thead>
+          <tbody id="core-curriculum-body"></tbody>
+        </table>
+      </section>
+
+      <section class="grade-note" aria-label="Grade requirements">
+        <h2>Grade Requirements</h2>
+        <p id="grade-default"></p>
+        <p id="grade-asterisk"></p>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
